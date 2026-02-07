@@ -1,0 +1,402 @@
+---
+alwaysApply: true
+priority: critical
+---
+
+# CRITICAL RULE: Mandatory Development Log Updates
+
+## ⚠️ THIS IS NOT OPTIONAL - LOG UPDATES ARE PART OF EVERY TASK
+
+**The DEVELOPMENT_LOG.md update is EQUAL PRIORITY to code changes. It is NOT a separate task. It is PART OF the same task.**
+
+**User's explicit statement:** *"This document is your holy grail and should be accurate for all times."*
+
+---
+
+## 🚨 MANDATORY WORKFLOW - READ THIS FIRST
+
+### When You Complete ANY Code Change:
+
+1. ✅ **Write/Modify the code**
+2. ✅ **IMMEDIATELY update DEVELOPMENT_LOG.md** (in the SAME response)
+3. ✅ **THEN mark task as complete**
+
+**DO NOT:**
+- ❌ Say "task complete" without updating the log
+- ❌ Move to next task without updating the log  
+- ❌ Consider code changes "done" until log is updated
+- ❌ Defer log updates to "later" or "next time"
+
+**The log update happens IN THE SAME RESPONSE as the code change. Period.**
+
+---
+
+## What is DEVELOPMENT_LOG.md?
+
+The Development Log is a detailed, educational document that:
+- Explains every step taken during development
+- Breaks down technical concepts for non-technical readers
+- Documents all code changes, bug fixes, and decisions
+- Serves as a learning resource for someone with no coding experience
+- Maintains a historical record of the project's evolution
+
+**It is the user's primary learning resource. Treat it with the same care as production code.**
+
+---
+
+## 🔴 TRIGGERS: When You MUST Update the Log
+
+Update DEVELOPMENT_LOG.md **IMMEDIATELY** (same response) when you:
+
+### 1. Complete Any Task
+- ✅ Task from task list completed
+- ✅ Sub-task finished
+- ✅ Feature implemented
+- **Action:** Add new section documenting what was done
+
+### 2. Make Code Changes
+- ✅ Write new code
+- ✅ Fix bugs
+- ✅ Refactor existing code
+- ✅ Add features
+- ✅ Modify configuration
+- ✅ Update dependencies
+- **Action:** Document changes with file paths and explanations
+
+### 3. Fix Errors
+- ✅ Debug and resolve issues
+- ✅ Fix broken functionality
+- ✅ Resolve build/compilation errors
+- **Action:** Document error, cause, solution, and lessons learned
+
+### 4. Change Project Structure
+- ✅ Create new files
+- ✅ Move/rename files
+- ✅ Add new folders
+- ✅ Reorganize code
+- **Action:** Document structure changes and rationale
+
+### 5. Make Decisions
+- ✅ Choose between approaches
+- ✅ Select tools/libraries
+- ✅ Define architecture
+- **Action:** Document decision, alternatives considered, and reasoning
+
+### 6. User Requests Log Update
+- ✅ User explicitly asks for log update
+- ✅ User says "move to next task" (update log first)
+- ✅ User says "document this"
+- **Action:** Update relevant sections immediately
+
+---
+
+## ✅ MANDATORY CHECKLIST - Complete Before Saying "Done"
+
+Before you respond with "complete", "done", "finished", or move to the next task, you MUST verify:
+
+- [ ] **Code changes are implemented**
+- [ ] **DEVELOPMENT_LOG.md has been updated** (in this same response)
+- [ ] **New section added** OR **existing section updated**
+- [ ] **All technical concepts explained** in simple terms
+- [ ] **Code examples included** with explanations
+- [ ] **File paths listed** for all modified files
+- [ ] **"What We Learned" section** includes key takeaways
+- [ ] **Format matches existing log structure**
+- [ ] **Chronological order maintained**
+- [ ] **No outdated information** left in log
+
+**If ANY checkbox is unchecked, you are NOT done. Update the log NOW.**
+
+---
+
+## 📝 Update Process (Step-by-Step)
+
+### Step 1: Read Current Log
+- Read `DEVELOPMENT_LOG.md` to understand structure and tone
+- Identify where new content belongs (chronological order)
+- Note existing format patterns
+
+### Step 2: Identify What Changed
+- List all files modified/created
+- Summarize what was done
+- Note any errors encountered and fixed
+- Identify key decisions made
+
+### Step 3: Write Log Entry
+Follow this structure:
+
+```markdown
+## Task X.X: [Task Name] ✅
+
+### What We Did
+[High-level summary - 2-3 sentences explaining what was accomplished]
+
+### Files Created/Modified
+- `path/to/file1.ts` - [What changed and why]
+- `path/to/file2.ts` - [What changed and why]
+
+### Technical Details
+
+#### 1. [Specific Change Name]
+**What it does:**
+[Simple explanation of what this code/change does]
+
+**Why it matters:**
+[Business or technical reason - why did we need this?]
+
+**How it works:**
+```typescript
+// Code example with inline comments explaining each part
+const example = "with detailed explanations";
+```
+
+**Key concepts explained:**
+- **Concept Name:** [Simple definition - assume reader knows nothing]
+- **Another Concept:** [Another simple definition]
+
+### What We Learned
+- [Key takeaway 1]
+- [Key takeaway 2]
+- [Any gotchas or important notes]
+
+---
+```
+
+### Step 4: Verify Quality
+- ✅ Written for non-technical audience?
+- ✅ All jargon explained?
+- ✅ Code examples included?
+- ✅ "Why" explained, not just "what"?
+- ✅ Matches existing format?
+
+---
+
+## 🎯 Content Guidelines
+
+### What to Include (MANDATORY):
+
+1. **Step-by-step explanations**
+   - What was done, in order
+   - Why each step was necessary
+
+2. **Code snippets with explanations**
+   - Show actual code
+   - Explain what each part does
+   - Use inline comments
+
+3. **Technical concepts broken down**
+   - Define every technical term
+   - Explain as if teaching a beginner
+   - Use analogies when helpful
+
+4. **Decision rationale**
+   - Why this approach?
+   - What alternatives were considered?
+   - What trade-offs were made?
+
+5. **Error documentation**
+   - What error occurred?
+   - Why did it happen?
+   - How was it fixed?
+   - How can it be prevented?
+
+6. **File paths and line numbers**
+   - List all modified files
+   - Reference specific sections when relevant
+
+### What to Avoid:
+
+- ❌ Assuming technical knowledge
+- ❌ Skipping explanations of "basic" concepts
+- ❌ Using jargon without defining it
+- ❌ Leaving gaps in chronological record
+- ❌ Omitting the "why" behind decisions
+- ❌ Writing only "what" without "how" or "why"
+
+---
+
+## 🔄 Integration with Common Workflows
+
+### Workflow 1: Completing a Task
+```
+1. Implement code changes
+2. Test/verify it works
+3. Update DEVELOPMENT_LOG.md ← MANDATORY
+4. Mark task as complete
+```
+
+### Workflow 2: User Says "Move to Next Task"
+```
+1. Update DEVELOPMENT_LOG.md for completed work ← DO THIS FIRST
+2. Then proceed to next task
+```
+
+### Workflow 3: Fixing a Bug
+```
+1. Identify and fix the bug
+2. Update DEVELOPMENT_LOG.md with:
+   - What the bug was
+   - Why it happened
+   - How it was fixed
+   - How to prevent it
+3. Mark as resolved
+```
+
+### Workflow 4: Making Corrections
+```
+1. Fix the code
+2. Update DEVELOPMENT_LOG.md (same response)
+3. Document what was wrong and why
+4. Explain the correction
+```
+
+### Workflow 5: End of Coding Session
+```
+1. Review all code changes made
+2. Update DEVELOPMENT_LOG.md for all changes
+3. Verify no sections are outdated
+4. Ensure chronological flow maintained
+```
+
+---
+
+## 📋 Example: Good Log Entry
+
+```markdown
+## Task 4.2: Add Error Handling to API Endpoint ✅
+
+### What We Did
+Added comprehensive error handling to the main API endpoint to gracefully handle network failures, invalid input, and rate limit errors.
+
+### Files Modified
+- `backend/api/check-ai-traces.ts` - Added try-catch blocks and error response formatting
+- `backend/lib/errorHandler.ts` - Created new utility for consistent error formatting
+
+### Technical Details
+
+#### 1. Error Handling Wrapper
+**What it does:**
+Wraps API calls in try-catch blocks to prevent crashes when errors occur.
+
+**Why it matters:**
+Without error handling, if OpenAI's API is down or returns an unexpected response, our entire server would crash. Users would see a generic 500 error with no helpful information.
+
+**How it works:**
+```typescript
+// Try to execute the API call
+try {
+  const result = await detectAIContent(text);
+  return result;
+} catch (error) {
+  // If something goes wrong, catch the error here
+  // Instead of crashing, we return a helpful error message
+  return { error: 'Failed to analyze text', details: error.message };
+}
+```
+
+**Key concepts explained:**
+- **Try-Catch Block:** Like a safety net. Code in the `try` block runs normally. If an error occurs, execution jumps to the `catch` block instead of crashing.
+- **Async/Await:** `await` pauses execution until the promise completes. Makes asynchronous code look synchronous.
+
+### What We Learned
+- Always wrap external API calls in try-catch blocks
+- Provide helpful error messages to users, not technical stack traces
+- Log errors server-side for debugging, but keep user-facing messages simple
+- Different error types (network, validation, rate limit) need different handling
+
+---
+```
+
+---
+
+## 🚫 Negative Examples (What NOT to Do)
+
+### ❌ BAD: Too Brief
+```markdown
+## Task 4.2: Added error handling ✅
+Fixed the API endpoint.
+```
+**Problems:** No explanation, no code examples, no "why", no concepts explained.
+
+### ❌ BAD: Too Technical
+```markdown
+## Task 4.2: Implemented error handling ✅
+Added try-catch blocks with proper exception propagation and error boundary patterns.
+```
+**Problems:** Assumes reader knows what these terms mean, no explanation.
+
+### ❌ BAD: Missing Context
+```markdown
+## Task 4.2: Error handling ✅
+Added error handling to the API.
+```
+**Problems:** No file paths, no code examples, no explanation of what changed.
+
+### ✅ GOOD: Complete Entry
+See example above in "Example: Good Log Entry" section.
+
+---
+
+## 🎓 Writing Style Guidelines
+
+### Tone
+- **Educational:** Write as if teaching someone who has never coded
+- **Friendly:** Approachable, not intimidating
+- **Clear:** Simple language, avoid unnecessary complexity
+
+### Structure
+- **Chronological:** New entries go at the end, in order
+- **Consistent:** Follow existing format patterns
+- **Complete:** Don't leave gaps or "TBD" sections
+
+### Explanations
+- **Start simple:** Explain basic concepts first
+- **Build up:** Add complexity gradually
+- **Use analogies:** Compare technical concepts to everyday things
+- **Show, don't just tell:** Include code examples
+
+---
+
+## 🔍 Quality Checklist for Log Entries
+
+Every log entry should answer:
+- ✅ **What** was done? (clear summary)
+- ✅ **Why** was it needed? (business/technical reason)
+- ✅ **How** does it work? (code examples with explanations)
+- ✅ **What** files changed? (complete list with paths)
+- ✅ **What** did we learn? (key takeaways)
+- ✅ **What** concepts need explanation? (all technical terms defined)
+
+---
+
+## ⚡ Quick Reference: Update Triggers
+
+Update the log when you:
+- ✅ Write new code
+- ✅ Fix bugs
+- ✅ Complete tasks
+- ✅ Add features
+- ✅ Refactor code
+- ✅ Fix errors
+- ✅ Create files
+- ✅ Make decisions
+- ✅ Update configs
+- ✅ Change structure
+
+**Remember: Log update happens IN THE SAME RESPONSE as the code change.**
+
+---
+
+## Final Reminder
+
+**This rule has CRITICAL priority. The DEVELOPMENT_LOG.md is:**
+- The user's primary learning resource
+- A historical record of all decisions
+- An onboarding tool for new contributors
+- A reference guide explaining "why"
+
+**An outdated log is a broken feature. Treat log updates with the same urgency as fixing production bugs.**
+
+**User's words:** *"This document is your holy grail and should be accurate for all times."*
+
+**Do not skip this. Do not defer this. Do not forget this. Update the log as part of every code change.**
