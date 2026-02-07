@@ -179,6 +179,8 @@ const result = await fetch(url);
 - **Promise:** A value that will arrive in the future (like a receipt that becomes food later)
 ```
 
+---
+
 ## 🔧 How It Works
 
 ### Step 1: Install the Rule (Cursor Users)
