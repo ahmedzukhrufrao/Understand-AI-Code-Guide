@@ -177,7 +177,6 @@ const result = await fetch(url);
 - **fetch():** Browser function that requests data from a server (like asking a waiter for food)
 - **await:** Pauses code execution until the promise completes (like waiting for your order)
 - **Promise:** A value that will arrive in the future (like a receipt that becomes food later)
-```
 
 ---
 
